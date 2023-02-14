@@ -1,53 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head><style>
+        body, html{
+            margin:0;
+            padding:0;
+        }
+        .page-layout {
+            display: grid;
+            grid-template-rows: min-content 1fr;
+            grid-template-areas: "toolbar" "body";
+            margin: 0;
+            padding: 0;
+            min-width: fit-content; 
+            overflow: scroll; 
+            display: grid;
+            background-color: #075C56;
+        }
+        .div {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            padding: 8px;
+        }
+        .img {
+            border-radius: 8px;
+        }
         .grid-container {
           display: grid;
-          grid-template-columns: auto auto auto;
-          background-color: #2196F3;
-          height: 100%;
-          width: 100%;
+          max-width: 80vh;
+          min-width: 400px;
+          justify-self: center;
+          align-items: center;
+          grid-template-columns: 3fr 2fr;
+          grid-gap: 8px;
+          grid-template-rows: min-content min-content min-content 1fr min-content;
+          grid-template-areas: 
+            'aboutme headshot'
+            'education education'
+            'areas-of-support service-types'
+            'appointment-request appointment-request'
+            'fees fees';
+          overflow-x: hidden;
           overflow-y: scroll;
+          padding: 16px; 
+          color: #ffffff; 
+          overflow-y: scroll; 
+          grid-area: body;
         }
         .grid-item {
-          background-color: rgba(255, 255, 255, 0.8);
-          border: 1px solid rgba(0, 0, 0, 0.8);
-          padding: 20px;
-          font-size: 30px;
-          text-align: center;
+          padding: 16px;
+          font-size: 20px;
+          text-align: left;
         }
         </style></head>
-<body style="margin: 0px; width: 100vw; height: 100vh;">
-    <div class="grid-container" style="background-color: '#075C56'; color: '#ffffff';">
-        <div class="grid-item" style="grid-area: 'aboutme';">
+<body class="page-layout">
+    <div style="background-color: #292E72; padding: 8px; display: flex; position: relative; width: 100%; height: 100%; grid-area: toolbar;">
+        <h1>Peacock Wellbeing</h1>
+        <button type="button" onclick="alert('Book an appointment!')">Book an appointment</button>
+        <button type="button" onclick="alert('About me!')">About me</button>
+        <button type="button" onclick="alert('Services!')">Services</button>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-area: aboutme;">
             <h1>About me:</h1>
             <p>I have a deep love for helping people learn more about themselves on their path to healing and wholeness.</p>
             <p>I have over 20 years of professional experience in healing fields- as a licensed clinical social worker (therapist), minister, spiritual health practitioner/educator, and meditation teacher. I utilize these fields and influences to offer holistic care.</p>
             <p>I utilize a client-centered approach, building on the strengths present and underlying in the persons I support. I believe that people have within them what they need to grow, and through our work together we will focus on removing barriers to help these elements come forward. </p>
             <p>I have an expansive understanding and appreciation of spirituality and support people based on their particular values. I utilize contemplative practices, like meditation, when helpful to clients. I also draw from emotion-based, cognitive, and experiential modalities. I believe that warmth and good relationship are critical to the therapeutic process. </p>
         </div>
-        <div class="grid-item" style="grid-area: 'education';">
+        <img src="Caroline_Peacock_Headshot.jpg" alt="Photo of Caroline Peacock" style="grid-area: headshot; width: 100%; height: auto; border: 2px solid #DD9933; border-radius: 8px;"/>
+        <div class="grid-item" style="grid-area: education;">
             <h1>Education:</h1>
             <p>I have a Master of Social Work from Hunter College School of Social Work and am a Licensed Clinical Social Worker.</p>
             <p>I have a Master of Divinity from General Theological Seminary and am ordained as a priest in the Episocal Church.</p>
             <p>I am an ACPE Certified Educator (certified to train chaplains/spiritual health practitioners), and am board certified through the Association of Professional Chaplains. I am a CBCT™️ (Cognitively Based Compassion Training) teacher.</p>                
             <p>I have a certificate in Psychedelic Assisted Therapy from Naropa University.</p> 
         </div>
-        <div class="grid-item" style="grid-area: 'areas-of-support';">
-        <ul>
+        <div class="grid-item" style="grid-area: areas-of-support; align-self: flex-start;">
             <h1>Areas of Support:</h1>
-            <li>Life transitions</li>
-            <li>Trauma</li>
-            <li>LGBTQ identity</li>
-            <li>Parenting </li>
-            <li>Depression</li>
-            <li>Anxiety</li>
-            <li>Work/life balance</li>
-            <li>Workplace wellness for teams</li>
-            <li>Emotional well-being</li>
-        </ul>
+            <ul>
+                <li>Life transitions</li>
+                <li>Trauma</li>
+                <li>LGBTQ identity</li>
+                <li>Parenting </li>
+                <li>Depression</li>
+                <li>Anxiety</li>
+                <li>Work/life balance</li>
+                <li>Workplace wellness for teams</li>
+                <li>Emotional well-being</li>
+            </ul>
         </div>
-        <div class="grid-item" style="grid-area: 'service-types';">
+        <div class="grid-item" style="grid-area: service-types; align-self: flex-start;">
             <h1>Types of Services:</h1>
             <ul>
                 <li>Individual, couples, and group psychotherapy</li>
@@ -55,14 +99,15 @@
                 <li>Virtual or in person</li>
             </ul>
         </div>
-        <div class="grid-item" style="grid-area: 'appointment-request';">
+        <div class="grid-item" style="grid-area: appointment-request;">
             <h1>Request an Appointment:</h1>
         </div>
-        <div class="grid-item" style="grid-area: 'fees';">
+        <div class="grid-item" style="grid-area: fees;">
             <h1>Fees:</h1>
             <p>$190/session for individual and couples</p>
             <p>Group and teams- request consultation</p>
             <p>I do not accept insurance, but can provide a bill to be submitted to your insurance company for reimbursement</p></div>
+        </div>
     </div>
 </body>
 </html>
