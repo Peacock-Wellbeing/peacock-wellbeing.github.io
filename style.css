@@ -5,8 +5,10 @@ code {
 
 @font-face {
   font-family: 'Comfortaa';
-  src:  url('comfortaa.woff2') format('woff2'),
-        url('comfortaa.woff') format('woff');
+  src: url('../font/Comfortaa.ttf') format('truetype'),
+  url('../font/Comfortaa.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
