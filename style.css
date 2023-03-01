@@ -3,6 +3,17 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'Comfortaa';
+  src:  url('comfortaa.woff2') format('woff2'),
+        url('comfortaa.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src:  url('lato.woff2') format('woff2'),
+        url('lato.woff') format('woff');
+}
 
 body, html{
   margin:0;
