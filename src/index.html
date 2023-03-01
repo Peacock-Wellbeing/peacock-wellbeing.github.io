@@ -36,8 +36,8 @@
             <p>I am an ACPE Certified Educator (certified to train chaplains/spiritual health practitioners), and am board certified through the Association of Professional Chaplains. I am a CBCT™️ (Cognitively Based Compassion Training) teacher.</p>                
             <p>I have a certificate in Psychedelic Assisted Therapy from Naropa University.</p> 
         </div>
-        <div class="grid-item" style="grid-area: areas-of-support; align-self: flex-start;">
-            <h2>Areas of Support:</h2>
+        <div class="grid-item" style="grid-area: areas-of-support; display: flex; flex-direction: column; align-self: flex-start;">
+            <h2 style="height: fit-content;">Areas of Support:</h2>
             <ul>
                 <li>Life transitions</li>
                 <li>Trauma</li>
@@ -50,8 +50,8 @@
                 <li>Emotional well-being</li>
             </ul>
         </div>
-        <div class="grid-item" style="grid-area: service-types; align-self: flex-start;">
-            <h2 id="services">Types of Services:</h2>
+        <div class="grid-item" style="grid-area: service-types; display: flex; flex-direction: column; align-self: flex-start;">
+            <h2 id="services" style="height: fit-content;">Types of Services:</h2>
             <ul>
                 <li>Individual, couples, and group psychotherapy</li>
                 <li>Workplace team support</li>
@@ -60,6 +60,13 @@
         </div>
         <div class="grid-item" id="appointmentrequest" style="grid-area: appointment-request;">
             <h2>Request an Appointment:</h2>
+            <form>
+            <input type="text" name="firstname" placeholder="First Name">
+                <input type="text" name="lastname" placeholder="Last Name">
+                <input type="text" name="email" placeholder="Email address">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+            </form>
         </div>
         <div class="grid-item" style="grid-area: fees;">
             <h2>Fees:</h2>
