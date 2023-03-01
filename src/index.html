@@ -60,12 +60,13 @@
         </div>
         <div class="grid-item" id="appointmentrequest" style="grid-area: appointment-request;">
             <h2>Request an Appointment:</h2>
-            <form>
-            <input type="text" name="firstname" placeholder="First Name">
-                <input type="text" name="lastname" placeholder="Last Name">
-                <input type="text" name="email" placeholder="Email address">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Message"></textarea>
+            <form action="https://formspree.io/f/xnqyvvzz" method="POST" style="display: flex; flex-direction: column; max-width: 100%;">
+                <input required type="text" name="firstname" placeholder="First Name">
+                <input required type="text" name="lastname" placeholder="Last Name">
+                <!-- This is really gross, I don't know why unsetting the width works, but it does and I need to get this website up. Should come back and clean up. -->
+                <input required type="email" name="email" placeholder="Email address">
+                <textarea required name="message" placeholder="Message"></textarea>
+                <button style="width: fit-content; min-width: 108px; min-height: 32px;" type="submit">Send</button>
             </form>
         </div>
         <div class="grid-item" style="grid-area: fees;">
