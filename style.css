@@ -87,7 +87,7 @@ grid-template-areas:
   'appointment-request appointment-request'
   'fees fees';
 overflow-x: hidden;
-overflow-y: scroll;
+overflow-y: hidden;
 padding: 16px; 
 color: #ffffff; 
 overflow-y: scroll; 
