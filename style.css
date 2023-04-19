@@ -56,7 +56,7 @@ button {
   margin: 0;
   padding: 0;
   min-width: fit-content; 
-  overflow: scroll; 
+  overflow: hidden; 
   display: grid;
   background-color: #075C56;
 }
@@ -86,13 +86,17 @@ grid-template-areas:
   'areas-of-support service-types'
   'appointment-request appointment-request'
   'fees fees';
-overflow-x: hidden;
-overflow-y: hidden;
 padding: 16px; 
 color: #ffffff; 
-overflow-y: scroll; 
+overflow-x: hidden;
+overflow-y: scroll;
+-ms-overflow-style: none;  /* IE and Edge scrollbar hide */
+scrollbar-width: none;  /* Firefox hide */
 grid-area: body;
 }
+.grid-container::-webkit-scrollbar {
+  display: none;
+  }
 .grid-item {
 padding: 16px;
 font-size: 20px;
