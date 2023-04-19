@@ -75,6 +75,7 @@ rect {
 display: grid;
 max-width: 90vh;
 min-width: 400px;
+max-height: calc(100vh - 110px);
 justify-self: center;
 align-items: center;
 grid-template-columns: 4fr 3fr;
@@ -89,7 +90,7 @@ grid-template-areas:
 padding: 16px; 
 color: #ffffff; 
 overflow-x: hidden;
-overflow-y: scroll;
+overflow-y: auto;
 -ms-overflow-style: none;  /* IE and Edge scrollbar hide */
 scrollbar-width: none;  /* Firefox hide */
 grid-area: body;
