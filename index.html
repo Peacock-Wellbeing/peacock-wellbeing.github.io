@@ -7,12 +7,16 @@
     <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="page-layout">
-    <div style="background-color: #292E72; padding: 8px; display: grid; position: relative; width: 100%; height: 100%; grid-area: toolbar; grid-template-rows: 2fr 1fr;">
-        <h1>Peacock Wellbeing</h1>
-        <div style="justify-content: flex-start; display: flex;">
-            <button type="button" style="background-color: #DD9933; box-shadow: 0px 2px 4px #67074E" onclick="document.getElementById('appointmentrequest').scrollIntoView(true);">Request an appointment</button>
-            <button type="button" onclick="document.getElementById('aboutme').scrollIntoView(true);">About me</button>
-            <button type="button" onclick="document.getElementById('services').scrollIntoView(true);">Services</button>
+    <div style="background-color: #292E72; padding: 8px; display: grid; position: relative; width: 100%; height: 100%; grid-area: toolbar; grid-template-columns: 1fr 1fr;">
+        <div>
+            <h1>Peacock Wellbeing</h1>
+            <h2>Dr. Caroline Peacock</h2>
+        </div>
+        <div style="justify-content: flex-start; align-items: center; display: flex;">
+            <button type="button" style="background-color: #DD9933; box-shadow: 0px 2px 4px #67074E; max-height: 32px;" onclick="document.getElementById('appointmentrequest').scrollIntoView(true);">Request an appointment</button>
+            <button type="button" style="max-height: 32px;" onclick="document.getElementById('aboutme').scrollIntoView(true);">About me</button>
+            <button type="button" style="max-height: 32px;" onclick="document.getElementById('services').scrollIntoView(true);">Services</button>
+        </div>
         </div>
     </div>
     <div class="grid-container">
@@ -24,7 +28,7 @@
             <p>I have an expansive understanding and appreciation of spirituality and support people based on their particular values. I utilize contemplative practices, like meditation, when helpful to clients. I also draw from emotion-based, cognitive, and experiential modalities. I believe that warmth and good relationship are critical to the therapeutic process. </p>
         </div>
         <div style="grid-area: headshot; display: flex; flex-direction: column; height: fit-content; width: 100%; border: 2px solid #DD9933; background-color: #292E72; border-radius: 8px;">
-            <img src="Caroline_Peacock_Headshot.jpg" alt="Photo of Caroline Peacock" style="width: 100%; height: auto;"/>
+            <img src="Caroline_Peacock_Headshot.jpg" alt="Photo of Dr. Caroline Peacock" style="width: 100%; height: auto;"/>
                 <p style="padding-left: 8px;">Caroline Peacock | LSCW, MDiv, ACPE, APC</p>
                 <p style="padding-left: 8px;">License LCSW Georgia 005306</p>
         </div>
@@ -34,6 +38,7 @@
             <p>I have a Master of Divinity from General Theological Seminary and am ordained as a priest in the Episcopal Church.</p>
             <p>I am an ACPE Certified Educator (certified to train chaplains/spiritual health practitioners), and am board certified through the Association of Professional Chaplains. I am a CBCT™️ (Cognitively Based Compassion Training) teacher.</p>                
             <p>I have a certificate in Psychedelic Assisted Therapy from Naropa University.</p> 
+            <p>I have a Doctor of Ministry from Emory University Candler School of Theology.</p>
         </div>
         <div class="grid-item" style="grid-area: areas-of-support; display: flex; flex-direction: column; align-self: flex-start;">
             <h2 style="height: fit-content;">Areas of Support:</h2>
