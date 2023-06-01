@@ -49,6 +49,7 @@ button {
   border-radius: 8px;
   min-width: 108px;
   min-height: 32px;
+  width: fit-content;
 }
 .page-layout {
   display: grid;

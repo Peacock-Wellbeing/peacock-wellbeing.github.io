@@ -7,11 +7,8 @@
     <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="page-layout">
-    <div style="background-color: #292E72; padding: 8px; display: grid; position: relative; width: 100%; height: 100%; grid-area: toolbar; grid-template-columns: 1fr 1fr;">
-        <div>
-            <h1>Peacock Wellbeing</h1>
-            <h2>Dr. Caroline Peacock</h2>
-        </div>
+    <div style="background-color: #292E72; padding: 8px; display: grid; position: relative; width: 100%; height: 100%; grid-area: toolbar;">
+        <h1 style="width: fit-content">Peacock Wellbeing</h1>
         <div style="justify-content: flex-start; align-items: center; display: flex;">
             <button type="button" style="background-color: #DD9933; box-shadow: 0px 2px 4px #67074E; max-height: 32px;" onclick="document.getElementById('appointmentrequest').scrollIntoView(true);">Request an appointment</button>
             <button type="button" style="max-height: 32px;" onclick="document.getElementById('aboutme').scrollIntoView(true);">About me</button>
@@ -70,7 +67,7 @@
                 <!-- This is really gross, I don't know why unsetting the width works, but it does and I need to get this website up. Should come back and clean up. -->
                 <input required type="email" name="email" placeholder="Email address">
                 <textarea required name="message" placeholder="Message"></textarea>
-                <button style="width: fit-content; min-width: 108px; min-height: 32px;" type="submit">Send</button>
+                <button style="width: fit-content; max-width: 108px; min-height: 32px;" type="submit">Send</button>
             </form>
         </div>
         <div class="grid-item" style="grid-area: fees;">
